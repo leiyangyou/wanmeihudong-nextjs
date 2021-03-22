@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "https://pw24937343.jzfkw.cn/" },
+    { "source": "/:match*", "destination": "https://pw24937343.jzfkw.cn/:match*" }
+  ]
+}
