@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html data-scrapbook-source="https://fe.faisco.cn/hawkEye/crash.jsp" data-scrapbook-create="20210323064921624">
+<head><meta charset="UTF-8">
+</head>
+<body data-new-gr-c-s-check-loaded="14.1000.0" data-gr-ext-installed="">
+<script type="text/javascript">
+if (navigator.serviceWorker && parent.postMessage) {
+	navigator.serviceWorker.register('./service-worker.js')
+		.then(function (reg) {
+			console.log('connect serviceWorker success');
+			window.addEventListener('message',  function (e) {
+				if (navigator.serviceWorker.controller !== null) {
+			    	navigator.serviceWorker.controller.postMessage(e.data);
+				}
+			});
+		})
+		.catch(function (err) {
+	    	console.log('connect serviceWorker fail', err);
+	  });
+ }
+</script>
+
+
+		<div id="fetcherX-extension-installed" style="display:none;"></div>
+	</body></html>
